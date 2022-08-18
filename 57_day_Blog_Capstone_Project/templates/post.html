@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <div class="title"><h1>My Blog</h1></div>
+           </div>
+        <div class="content">
+            <div class="card">
+                {% if number==1: %}
+                    <h2>{{data[0]['title']}}</h2>
+                    <p>{{data[0]['body']}}</p>
+                {% elif number==2: %}
+                    <h2>{{data[1]['title']}}</h2>
+                    <p>{{data[1]['body']}}</p>
+                {% endif %}
+            </div>
+
+    </div>
+</div>
+</body>
+<footer>
+    <p>Made with ♥️ in India.</p>
+</footer>
+</html>
